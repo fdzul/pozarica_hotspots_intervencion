@@ -58,7 +58,10 @@ xaringanExtra::use_share_again()
 ---
 ## Situación Epidemiologica Hístorica.
 
-```{r, echo=FALSE, out.width="100%", warning=FALSE}
+```{r, echo=FALSE, warning=FALSE, out.width="100%"}
+ #Step 1. load the dataset ####
+#load("C:/Users/felip/OneDrive/automatic_read_sinave/8.RData/den/den2008_2021.RData")
+
 # step 1. load the historic dataset of dengue ####
 load("C:/Users/felip/OneDrive/automatic_read_sinave/8.RData/epid_channel_data.RData")
 
@@ -68,18 +71,18 @@ source('C:/Users/felip/OneDrive/automatic_read_sinave/3.Functions/den_epichannel
 # load the actual data ####
 data <- boldenr::read_dataset_bol(path = "C:/Users/felip/OneDrive/datasets/DGE/arbo/",
                                   dataset = "sinave")
-den_epichannel(x = w, 
-               edo = "VERACRUZ",
-               jur = "X",
-               mpo = "X", 
-               loc = "POZA RICA DE HIDALGO",
-               y = data,
-               current_year = 2020,
-               last_year = 2021,
-               x_epi = 35, y_epi = 15,
-               x_alerta = 32, y_alerta = 8, 
-               x_seg = 40, y_seg = 4,
-               x_exito = 47, y_exito = 1.5)
+plotly::ggplotly(den_epichannel(x = w, 
+                                edo = "VERACRUZ",
+                                jur = "X",
+                                mpo = "X", 
+                                loc = "POZA RICA DE HIDALGO",
+                                y = data,
+                                current_year = 2020,
+                                last_year = 2021,
+                                x_epi = 35, y_epi = 15,
+                                x_alerta = 32, y_alerta = 8, 
+                                x_seg = 40, y_seg = 4,
+                                x_exito = 47, y_exito = 1.5))
 ```
 
 ---
