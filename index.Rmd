@@ -93,6 +93,8 @@ plotly::ggplotly(den_epichannel(x = w,
 ![](figs/intensity_cases_poza_rica.jpg)
 ---
 ## Hotspots del Vector.
+![](figs/hotspots_eggs_intensity_pozarica.jpg)
+
 
 ---
 ## Mapa de Riesgo.
