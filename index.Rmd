@@ -1,0 +1,129 @@
+---
+title: "Intervenciones en el área Hotspots"
+subtitle: "Poza Rica"
+author: "Felipe Dzul-Manzanilla | Luis Hernández-Herrera | Arturo Baez-Hernández"
+institute: "SESVER-CENAPRECE"
+date: "2021/12/10 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - default
+      - default-fonts
+      - duke-blue
+      - hygge-duke
+      - libs/cc-fonts.css
+      - libs/figure-captions.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringanExtra, echo = FALSE}
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+
+## Contenido Temático
+
+&nbsp;
+
+### a) Situación Epidemiologica Hístorica.
+
+### b) Situación Entomológica Hístorica. 
+
+### c) Hotspots de la transmisión de Dengue. 
+
+### d) Hotspots del Vector.
+
+### d) Mapa de Riesgo.
+
+### e) Accciones de control.
+
+### f) Impacto de las intervenciones.
+
+---
+## Situación Epidemiologica Hístorica.
+
+```{r, echo=FALSE, out.width="100%", warning=FALSE}
+# step 1. load the historic dataset of dengue ####
+load("C:/Users/felip/OneDrive/automatic_read_sinave/8.RData/epid_channel_data.RData")
+
+#
+source('C:/Users/felip/OneDrive/automatic_read_sinave/3.Functions/den_epichannel.R', encoding = 'UTF-8')
+
+# load the actual data ####
+data <- boldenr::read_dataset_bol(path = "C:/Users/felip/OneDrive/datasets/DGE/arbo/",
+                                  dataset = "sinave")
+den_epichannel(x = w, 
+               edo = "VERACRUZ",
+               jur = "X",
+               mpo = "X", 
+               loc = "POZA RICA DE HIDALGO",
+               y = data,
+               current_year = 2020,
+               last_year = 2021,
+               x_epi = 35, y_epi = 15,
+               x_alerta = 32, y_alerta = 8, 
+               x_seg = 40, y_seg = 4,
+               x_exito = 47, y_exito = 1.5)
+```
+
+---
+## Situación Entomológica Hístorica. 
+
+---
+## Hotspots de la transmisión de Dengue. 
+
+---
+## Hotspots del Vector.
+
+---
+## Mapa de Riesgo.
+
+---
+## Accciones de control.
+
+---
+## Impacto de las intervenciones.
+
+
+
+---
+## Dios Botic!
+
+&nbsp;
+&nbsp;
+
+- ***bio***         :     https://fdzul.github.io/web_site_fadm/
+
+- ***email***       :     Userse.dzul.m@gmail.com
+
+- ***celular***     :     228 229 3419
+
+- ***slides***:     https://jolly-edison-c35bbb.netlify.app/
+
+
+<h3 style="text-align:center; color:#DB4437">Curso</h3>
+<h2 style="text-align:center; color:#0F9D58">Análisis espacial del dengue en R y Python</h2>
+
+
+
+
+.footnote[La presentación fue creada via [**xaringan**](https://github.com/yihui/xaringan),
+[**revealjs**](https://revealjs.com/),
+[remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr),
+& [R Markdown](https://rmarkdown.rstudio.com) en [R]() & [RStudio](2.R_Scripts/libs/rstudio_leaflet/rstudio_leaflet.css).]
