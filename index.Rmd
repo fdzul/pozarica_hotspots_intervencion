@@ -104,9 +104,15 @@ plotly::ggplotly(den_epichannel(x = w,
 ## Accciones de control.
 
 ---
-## Impacto de las intervenciones.
+## Impacto de las intervenciones (Huevos).
+![](figs/mean_eggs_by_area.jpg)
+---
+## Impacto de las intervenciones (Huevos).
+![](figs/mean_eggs_by_area&neighborhoods.jpg)
 
-
+---
+## Impacto de las intervenciones (Huevos).
+![](figs/mean_eggs_by_area&ageb.jpg)
 
 ---
 ## Dios Botic!
