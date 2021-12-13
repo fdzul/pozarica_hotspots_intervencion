@@ -87,15 +87,16 @@ plotly::ggplotly(den_epichannel(x = w,
 
 ---
 ## Situación Entomológica Histórica. 
-
+![](figs/eggs_pr_2021.jpg)
 ---
 ## Hotspots de la transmisión de Dengue. 
-
+![](figs/intensity_cases_poza_rica.jpg)
 ---
 ## Hotspots del Vector.
 
 ---
 ## Mapa de Riesgo.
+
 
 ---
 ## Accciones de control.
