@@ -97,6 +97,7 @@ plotly::ggplotly(den_epichannel(x = w,
 
 
 ---
+class: center
 ## Mapa de Riesgo.
 ```{r, echo=FALSE, warning=FALSE}
 library(magrittr)
@@ -141,6 +142,13 @@ class: center
 ---
 ## Impacto de las intervenciones (Huevos).
 ![](figs/mean_eggs_by_area&ageb.jpg)
+
+---
+## Impacto de las intervenciones (Adultos).
+![](figs/poza_rica_adultos.jpg)
+---
+## Impacto de las intervenciones (Adultos).
+![](figs/poza_rica_adultos_by_neighborhood.jpg)
 
 ---
 ## Dios Botic!
