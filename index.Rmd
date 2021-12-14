@@ -162,7 +162,7 @@ class: center
 
 - ***celular***     :     228 229 3419
 
-- ***slides***:     https://jolly-edison-c35bbb.netlify.app/
+- ***slides***      :     https://determined-snyder-609c7f.netlify.app/
 
 
 <h3 style="text-align:center; color:#DB4437">Curso</h3>
